@@ -35,9 +35,9 @@ Edit `support/set-env.sh` and `bin/compile` to update the version numbers.
 ````
 $ gem install vulcan
 $ vulcan create build-server-name
-$ export AWS_ID="1BHAJK48DJFMQKZMNV93" # optional if s3 handled manually.
-$ export AWS_SECRET="fj2jjchebsjksmMJCN387RHNjdnddNfi4jjhshh3" # as above
-$ export S3_BUCKET="bucket-name" # set to your S3 bucket.
+$ export AWS_ID="1BHAJK48DJFMQKZMNV93"
+$ export AWS_SECRET="fj2jjchebsjksmMJCN387RHNjdnddNfi4jjhshh3"
+$ export S3_BUCKET="bucket-name"
 $ source support/set-env.sh
 ````
 Edit `bin/compile` and `support/set-env.sh` to reflect the correct S3 bucket.
