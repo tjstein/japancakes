@@ -83,6 +83,7 @@ http {
       fastcgi_param   HTTPS on; # force SSL
       fastcgi_pass    unix:/tmp/php-fpm.socket;
       fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
+      fastcgi_hide_header "X-Pingback";
     }
   }
 }
